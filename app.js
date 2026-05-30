@@ -48,7 +48,7 @@ app.get('/details',function(req,res){
     let location=req.query.location;
     res.send(`the user age is ${age} and his/her ${location}`)
 })
-//filter mrthod
+//filter method
 app.put('/product/:id',function(req,res){
     let id=parseInt(req.params.id);
     products[id-1].name="moto 5g";
